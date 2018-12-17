@@ -1,4 +1,8 @@
 body {
     background: url('bg.jpg') no-repeat;
     background-size: cover;
+    background-color: red;
+}
+textarea {
+    min-width: 1000px;
 }

@@ -1,8 +1,19 @@
-/*document.addEventListener('DOMContentLoaded', function()
-	alert(jQuery);	
-}, false);*/
+document.addEventListener('DOMContentLoaded', function() {
+	//alert('hey');
+    //alert(localStorage['note1']);
+    document.getElementById('note1').value = localStorage['note1'];
+    document.getElementById('note2').value = localStorage['note2'];
+    document.getElementById('note3').value = localStorage['note3'];
+    document.getElementById('note4').value = localStorage['note4'];
+    document.getElementById('note5').value = localStorage['note5'];
+    document.getElementById('note6').value = localStorage['note6'];
+    document.getElementById('note7').value = localStorage['note7'];
+    document.getElementById('note8').value = localStorage['note8'];
+    document.getElementById('note9').value = localStorage['note9'];
+}, false);
 //alert(jQuery);
- $("body").append('Test');
+// $("body").append('Test');
+
 
 document.addEventListener('DOMContentLoaded', function () {
 	// add event listener for buttons
@@ -14,47 +25,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function saveNote () {
-	var note1 = document.getElementById('note1').value;
-	localStorage['note1'] = note1;
+    //alert('asdf');
+	var note1 = document.getElementById('note1').value; localStorage['note1'] = note1;
+	var note2 = document.getElementById('note2').value; localStorage['note2'] = note2;
+	var note3 = document.getElementById('note3').value; localStorage['note3'] = note3;
+	var note4 = document.getElementById('note4').value; localStorage['note4'] = note4;
+	var note5 = document.getElementById('note5').value; localStorage['note5'] = note5;
+	var note6 = document.getElementById('note6').value; localStorage['note6'] = note6;
+	var note7 = document.getElementById('note7').value; localStorage['note7'] = note7;
+	var note8 = document.getElementById('note8').value; localStorage['note8'] = note8;
+	var note9 = document.getElementById('note9').value; localStorage['note9'] = note9;
 	/*var note = chrome.storage.local.set({ 'note1' : '' }, function (){
 		//callback
 		alert('note saved successfully!');
 	});*/
-}
-
-// load sites in new background tabs
-function loadSites(e) {
-	var urlschemes = ['http', 'https', 'file', 'view-source'];
-	var urls = document.getElementById('urls').value.split('\n');
-	var lazyloading = document.getElementsByName('lazyloading')[0].checked;
-
-	for(var i=0; i<urls.length; i++){
-		theurl = urls[i].trim();
-		if(theurl != '') {
-			if(urlschemes.indexOf(theurl.split(':')[0]) == -1) {
-				theurl = 'http://' + theurl;
-			}
-			if(lazyloading && theurl.split(':')[0] != 'view-source' && theurl.split(':')[0] != 'file') {
-				chrome.tabs.create({url: chrome.extension.getURL('lazyloading.html#') + theurl, selected: false}); 
-			} else {
-				chrome.tabs.create({url: theurl, selected: false}); 
-			}
-		}
-	}
-}
-
-// extract urls from text
-function extractURLs(e) {
-	var text = document.getElementById('urls').value;
-
-	var urls = '';
-	var urlmatcharr;
-	var urlregex = /\b((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?Â«Â»â€œâ€â€˜â€™]))/ig;
-	while( (urlmatcharr = urlregex.exec(text)) !== null )
-    {
-        var match = urlmatcharr[0];
-        urls += match + '\n';
-    }
-
-	document.getElementById('urls').value = urls;
 }

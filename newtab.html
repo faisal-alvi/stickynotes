@@ -8,6 +8,13 @@
 	}
 	#label {
 		padding-bottom: 5px;
+		background: #fff4b4;
+		text-align: center;
+		font-size: 16px;
+		padding: 10px 0;
+		text-transform: uppercase;
+		margin: 0 0 20px;
+		font-weight: 700;
 	}
 	#controls {
 		padding-top: 5px;
@@ -20,12 +27,67 @@
 		overflow: auto;
 	}
 	-->
+	body {
+		background: url('bg.jpg') no-repeat;
+		background-size: cover;
+	}
+	#note1 {background: #fff3ab;}
+	#note2 {background: #fecce5;}
+	#note3 {background: #ccf1c5;}
+	#note4 {background: #e7cfff;}
+	#note5 {background: #b0e0ec;}
+	#note6 {background: #fcfcfa;}
+	#note7 {background: #abd7ff;}
+	#note8 {background: #ffcbab;}
+	#note9 {background: #444444;color:#FFFFFF;}
+
+	textarea {
+		width: 25%;
+		float: left;
+		min-height: 350px;
+		margin-left: 4%;
+		margin-bottom: 3%;
+	}
+
+	.row {
+		overflow: hidden;
+		text-align: center;
+	}
+
+	input#savenote {
+		border: 0;
+		background: #9ab2ec;
+		color: #fee;
+		padding: 10px 20px;
+		top: 0;
+		right: 0;
+		position: fixed;
+		max-width: 70px;
+		font-size: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
 	</style>
 	<script type="text/javascript" src="newtab.js"></script>
 </head>
 <body>
-	<div id="label">Sticky Notes:</div>
+	<div id="label">Sticky Notes</div>
+	<div class="row row1">
+		<textarea id="note1" class="notes"></textarea>
+		<textarea id="note2" class="notes"></textarea>
+		<textarea id="note3" class="notes"></textarea>
+	</div>
+	<div class="row row2">
+		<textarea id="note4" class="notes"></textarea>
+		<textarea id="note5" class="notes"></textarea>
+		<textarea id="note6" class="notes"></textarea>
+	</div>
+	<div class="row row3">
+		<textarea id="note7" class="notes"></textarea>
+		<textarea id="note8" class="notes"></textarea>
+		<textarea id="note9" class="notes"></textarea>
+	</div>
 
-	<textarea rows="20" cols="50" id="note1" class="notes"></textarea>
 	<input type="button" id="savenote" value="save"/>
 </body></html>
