@@ -22,10 +22,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById('savenote').addEventListener('click', saveNote);
 	// focus on form field
 	//document.getElementById('urls').focus();
+	document.getElementById('note1').addEventListener('keydown', saveNote);
+	document.getElementById('note2').addEventListener('keydown', saveNote);
+	document.getElementById('note3').addEventListener('keydown', saveNote);
+	document.getElementById('note4').addEventListener('keydown', saveNote);
+	document.getElementById('note5').addEventListener('keydown', saveNote);
+	document.getElementById('note6').addEventListener('keydown', saveNote);
+	document.getElementById('note7').addEventListener('keydown', saveNote);
+	document.getElementById('note8').addEventListener('keydown', saveNote);
+	document.getElementById('note9').addEventListener('keydown', saveNote);
+
 });
 
+
+
+
 function saveNote () {
-    //alert('asdf');
+    //alert('hey');
 	var note1 = document.getElementById('note1').value; localStorage['note1'] = note1;
 	var note2 = document.getElementById('note2').value; localStorage['note2'] = note2;
 	var note3 = document.getElementById('note3').value; localStorage['note3'] = note3;
