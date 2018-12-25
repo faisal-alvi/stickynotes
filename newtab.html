@@ -65,20 +65,6 @@
         width: 100%;
         min-height: 350px;
     }
-	input#savenote {
-		border: 0;
-		background: #9ab2ec;
-		color: #fee;
-		padding: 10px 20px;
-		top: 0;
-		right: 0;
-		position: fixed;
-		max-width: 70px;
-		font-size: 15px;
-		text-align: center;
-		text-transform: uppercase;
-		cursor: pointer;
-	}
 	</style>
 	<script type="text/javascript" src="newtab.js"></script>
 </head>
@@ -86,28 +72,44 @@
 	<div id="label">Sticky Notes</div>
 	<div class="row row1">
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear clear1">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear1">clear</a>
 			<textarea id="note1"></textarea>
 		</div>
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear clear2">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear2">clear</a>
 			<textarea id="note2"></textarea>
 		</div>
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear clear3">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear3">clear</a>
 			<textarea id="note3"></textarea>
 		</div>
 	</div>
 	<div class="row row2">
-		<textarea id="note4" class="notes"></textarea>
-		<textarea id="note5" class="notes"></textarea>
-		<textarea id="note6" class="notes"></textarea>
+		<div class="notes">
+			<a href="javascript:void(0)" class="clear" id="clear4">clear</a>
+			<textarea id="note4"></textarea>
+		</div>
+		<div class="notes">
+			<a href="javascript:void(0)" class="clear" id="clear5">clear</a>
+			<textarea id="note5"></textarea>
+		</div>
+		<div class="notes">
+			<a href="javascript:void(0)" class="clear" id="clear6">clear</a>
+			<textarea id="note6"></textarea>
+		</div>
 	</div>
 	<div class="row row3">
-		<textarea id="note7" class="notes"></textarea>
-		<textarea id="note8" class="notes"></textarea>
-		<textarea id="note9" class="notes"></textarea>
+		<div class="notes">
+			<a href="javascript:void(0)" class="clear" id="clear7">clear</a>
+			<textarea id="note7"></textarea>
+		</div>
+		<div class="notes">
+			<a href="javascript:void(0)" class="clear" id="clear8">clear</a>
+			<textarea id="note8"></textarea>
+		</div>
+		<div class="notes">
+			<a href="javascript:void(0)" class="clear" id="clear9">clear</a>
+			<textarea id="note9"></textarea>
+		</div>
 	</div>
-
-	<input type="button" id="savenote" value="save"/>
 </body></html>
