@@ -13,7 +13,7 @@
 		font-size: 16px;
 		padding: 10px 0;
 		text-transform: uppercase;
-		margin: 0 0 20px;
+		margin: 0 0 10px;
 		font-weight: 700;
 	}
 	#controls {
@@ -28,7 +28,6 @@
 	}
 	-->
 	body {
-		/* background: url('bg.jpg') no-repeat; */
 		background-size: cover;
 		background-color: #efebd6;
 	}
@@ -51,20 +50,33 @@
         display: inline-block;
 		width: 25%;
 		float: left;
-		min-height: 350px;
 		margin-left: 4%;
 		margin-bottom: 3%;
     }
     .clear {
-        position: absolute;
-        top: 0px;
-        right: 0;
-        color: #888181;
+		position: absolute;
+		top: 10px;
+		right: 0;
+		color: #888181;
+		background: url(./clear.png);
+		background-size: cover;
+		width: 20px;
+		height: 20px;
     }
     .notes textarea {
         width: 100%;
         min-height: 350px;
     }
+	@media only screen and (max-width: 600px) {
+		.notes {
+			min-width: 500px;
+			margin: 0;
+		}
+
+		.notes textarea {
+			min-height: 300px;
+		}
+	}
 	</style>
 	<script type="text/javascript" src="newtab.js"></script>
 </head>
@@ -72,43 +84,43 @@
 	<div id="label">Sticky Notes</div>
 	<div class="row row1">
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear" id="clear1">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear1"></a>
 			<textarea id="note1"></textarea>
 		</div>
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear" id="clear2">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear2"></a>
 			<textarea id="note2"></textarea>
 		</div>
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear" id="clear3">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear3"></a>
 			<textarea id="note3"></textarea>
 		</div>
 	</div>
 	<div class="row row2">
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear" id="clear4">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear4"></a>
 			<textarea id="note4"></textarea>
 		</div>
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear" id="clear5">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear5"></a>
 			<textarea id="note5"></textarea>
 		</div>
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear" id="clear6">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear6"></a>
 			<textarea id="note6"></textarea>
 		</div>
 	</div>
 	<div class="row row3">
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear" id="clear7">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear7"></a>
 			<textarea id="note7"></textarea>
 		</div>
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear" id="clear8">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear8"></a>
 			<textarea id="note8"></textarea>
 		</div>
 		<div class="notes">
-			<a href="javascript:void(0)" class="clear" id="clear9">clear</a>
+			<a href="javascript:void(0)" class="clear" id="clear9"></a>
 			<textarea id="note9"></textarea>
 		</div>
 	</div>

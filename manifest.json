@@ -1,34 +1,15 @@
 {
   "manifest_version": 2,
-  "name": "My StikyNote - Original",
-  "description": "The most popular movies and TV shows in your   default tab. Includes ratings, summaries and the ability to watch trailers.",
+  "name": "Stiky Notes",
+  "description": "The popular sticky notes interface now in chrome!",
   "version": "1",
   "author": "Faisal Alvi",
   "browser_action": {
-    "default_icon": "tab-icon.jpg",
+    "default_icon": "icon.png",
     "default_title": "Have a good day",
 	"default_popup": "newtab.html"
-  },
-  /*"background":
-    {
-        "scripts": ["jquery.js", "newtab.js"],
-        "persistent": false
-    },*/
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": [
-        "jquery.js",
-        "newtab.js"
-      ]
-    }
-  ],
-  "chrome_url_overrides": {
-    "newtab": "newtab.html"
   },
   "permissions": [
     "activeTab"
 	]
-
-
 }
