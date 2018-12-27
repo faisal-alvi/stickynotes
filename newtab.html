@@ -6,16 +6,6 @@
 		font-family: Helvetica, Arial, sans;
 		font-size: 12px;
 	}
-	#label {
-		padding-bottom: 5px;
-		background: #fff4b4;
-		text-align: center;
-		font-size: 16px;
-		padding: 10px 0;
-		text-transform: uppercase;
-		margin: 0 0 10px;
-		font-weight: 700;
-	}
 	#controls {
 		padding-top: 5px;
 	}
@@ -40,7 +30,6 @@
 	#note7 {background: #abd7ff;border-top: 10px solid #419df1;}
 	#note8 {background: #ffcbab;border-top: 10px solid #f38b4b;}
 	#note9 {background: #444444;color:#FFFFFF;border-top: 10px solid #060606;}
-
 	.row {
 		overflow: hidden;
 		text-align: center;
@@ -67,12 +56,31 @@
         width: 100%;
         min-height: 350px;
     }
+	.pagination {
+		position: fixed;
+		top: 10px;
+		z-index: 9999;
+		text-align: center;
+		right: 15px;
+	}
+	.pagination a {
+		display: block;
+		margin: 10px;
+		text-decoration: none;
+		color: #000000;
+		background: #c8b2da45;
+		border-radius: 30%;
+		padding: 5px;
+		width: 15px;
+	}
+	.pagination a:hover {
+		background: #e7cfff;
+	}
 	@media only screen and (max-width: 600px) {
 		.notes {
 			min-width: 500px;
 			margin: 0;
 		}
-
 		.notes textarea {
 			min-height: 300px;
 		}
@@ -81,7 +89,18 @@
 	<script type="text/javascript" src="newtab.js"></script>
 </head>
 <body>
-	<div id="label">Sticky Notes</div>
+	<div class="pagination">
+		<a href="#note1">#1</a>
+		<a href="#note2">#2</a>
+		<a href="#note3">#3</a>
+		<a href="#note4">#4</a>
+		<a href="#note5">#5</a>
+		<a href="#note6">#6</a>
+		<a href="#note7">#7</a>
+		<a href="#note8">#8</a>
+		<a href="#note9">#9</a>
+	</div>
+
 	<div class="row row1">
 		<div class="notes">
 			<a href="javascript:void(0)" class="clear" id="clear1"></a>
